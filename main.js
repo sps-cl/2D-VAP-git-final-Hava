@@ -18,6 +18,7 @@ function NewTodo() {
     const removeButton = document.createElement("button");
         removeButton.classList.add("todo_remove");
         removeButton.textContent = "Remove";
+        removeButton.onclick = function() {RemoveTodo(this)};
 
     //Apply the new elements to the container
     todoDiv.appendChild(checkbox);
@@ -25,4 +26,8 @@ function NewTodo() {
     todoDiv.appendChild(removeButton);
 
     todoContainer.appendChild(todoDiv);
+}
+
+function RemoveTodo(button) {
+    button.parentElement.remove();
 }
