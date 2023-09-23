@@ -17,7 +17,7 @@ function NewTodo() {
 
     const removeButton = document.createElement("button");
         removeButton.classList.add("todo_remove");
-        removeButton.textContent = "Remove";
+        removeButton.textContent = "❌";
         removeButton.onclick = function() {RemoveTodo(this)};
 
     //Apply the new elements to the container
