@@ -12,6 +12,16 @@ body{
     border-bottom: 5px solid #009578;
 }
 
+.todo_new{
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    flex-grow: 1;
+    width: 930px;
+}
+
 .todo{
     display: flex;
     justify-content: space-between;
@@ -27,8 +37,9 @@ body{
     font-weight: bold;
     flex-grow: 1;
 }
-.todo_remove{
+button{
     font-size: 25px;
+    margin: 0px;
     background: none;
     border: none;
 }
@@ -37,7 +48,6 @@ body{
     color: #555555;
     background-color: #eeeeee;
 }
-
 
 .todo:has(.todo_remove:hover){
     background-color: lightcoral;
